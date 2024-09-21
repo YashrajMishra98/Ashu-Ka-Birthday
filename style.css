@@ -82,7 +82,7 @@ video {
 .ribbon {
     position: absolute;
     background-color: #D7263D;
-    top: 50px;
+    top: 7vh;
     left: 0;
 }
 
@@ -93,16 +93,16 @@ video {
 }
 
 .ribbon::before {
-    width: 3vh;
-    height: 30vh;
+    width: 2vh;
+    height: 20vh;
     top: -7vh;
-    left: 13.5vh;
+    left: 9vh;
 }
 
 .ribbon::after {
-    width: 30vh;
-    height: 3vh;
-    top: 7.5vh;
+    width: 20vh;
+    height: 2vh;
+    top: 3vh;
 }
 
 .message {
@@ -143,22 +143,6 @@ video {
     }
 }
 
-.countdown-container {
-    text-align: center;
-    height: 10vh;
-}
-
-#countdown {
-    font-size: 5vh;
-    margin-top: 0px;
-    height: 5vh;
-    font-style: italic;
-    color: rgb(247, 141, 3);
-    padding: 20px 40px;
-    border: 3px solid rgb(247, 141, 3);
-    border-radius: 10px;
-}
-
 marquee {
     background-color: palegoldenrod;
     color: rgb(247, 141, 3);
@@ -173,4 +157,46 @@ marquee {
     font-size: 40px;
     font-style: italic;
     animation: slide 5s ease-in-out infinite;
+}
+
+@media (max-width: 768px) {
+    #message {
+        font-size: 3vh;
+    }
+    .dil {
+        font-size: 6vh;
+    }
+    .gift-box {
+        width: 20vh;
+        height: 20vh;
+    }
+    .message {
+        height: 20vh;
+        width: 20vh;
+        font-size: 24px;
+    }
+    marquee {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    #message {
+        font-size: 4vh;
+    }
+    .dil {
+        font-size: 5vh;
+    }
+    .gift-box {
+        width: 15vh;
+        height: 15vh;
+    }
+    .message {
+        height: 15vh;
+        width: 15vh;
+        font-size: 20px;
+    }
+    marquee {
+        font-size: 24px;
+    }
 }
