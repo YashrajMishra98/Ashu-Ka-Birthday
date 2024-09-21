@@ -41,7 +41,7 @@ header {
 .container {
     background-color: aqua;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: auto auto;
     height: auto;
     width: 100vw;
     text-align: center;
