@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-header{
+header {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -38,24 +38,46 @@ header{
     }
 }
 
-.container{
+.container {
     background-color: aqua;
     display: grid;
-    grid-template-columns: auto auto;
-    height: 90vh;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    height: auto;
     width: 100vw;
     text-align: center;
     justify-content: center;
+    padding: 1rem; /* Add padding for spacing */
 }
 
-.container div{
+.container div {
     background-color: rgb(124, 193, 228);
     border: 3px solid rgb(246, 34, 104);
     border-radius: 10px;
-    margin: 3vh;
+    margin: 1vh;
     padding: 1vh;
     color: white;
-    height: 32vh;
-    width: 42vw;
+    height: auto; /* Change height to auto for flexibility */
+    width: 100%; /* Use full width of grid cell */
     font-size: 20px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    #message {
+        font-size: 4vh; /* Adjust font size for smaller screens */
+    }
+
+    .container div {
+        font-size: 18px; /* Slightly reduce font size */
+    }
+}
+
+@media (max-width: 480px) {
+    #message {
+        font-size: 3vh; /* Further reduce font size */
+    }
+
+    .container div {
+        font-size: 16px; /* Further reduce font size */
+    }
 }
