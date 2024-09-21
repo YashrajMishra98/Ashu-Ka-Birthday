@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memories</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .video-background {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+            gap: 10px;
+            padding: 10px;
+            width: 100vw; 
+            height: 100vh;
+            box-sizing: border-box;
+            overflow-y: auto; 
+        }
+
+        .box {
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            border-radius: 10px;
+        }
+        
+        a {
+            display: block;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay muted loop>
+            <source src="./Videos And Photoes/videoplayback.webm" type="video/webm">
+        </video>
+
+        <div class="container">
+            <div class="box">
+                <a href="https://drive.google.com/drive/folders/1QNl6-FY880QKWr0DycMnBRQcFMjV6MBL?usp=drive_link"><img src="./Videos And Photoes/v1.jpg" alt=""></a>
+            </div>
+            <div class="box">
+                <a href="https://drive.google.com/drive/folders/1XiBqdGigidsGwl2migVEnaFASreVibff?usp=drive_link"><img src="./Videos And Photoes/v3.jpg" alt=""></a>
+            </div>
+            <div class="box">
+                <a href="https://drive.google.com/drive/folders/11Qa5oE9GQfglBfdul99q_AfMLw_eSlTe?usp=drive_link"><img src="./Videos And Photoes/v4.jpg" alt=""></a>
+            </div>
+            <div class="box">
+                <a href="https://drive.google.com/drive/folders/1FlUD-O7G0rAoIKFT3ZZOP-WkdNWJnB8_?usp=drive_link"><img src="./Videos And Photoes/ak1.jpg" alt=""></a>
+            </div>
+            <div class="box">
+                <a href="https://drive.google.com/drive/folders/1EQz73ho0mQyEBK8F2qMasWPza9UweqM2?usp=drive_link"><img src="./Videos And Photoes/ak2.png" alt=""></a>
+            </div>
+            <div class="box">
+                <a href="https://drive.google.com/drive/folders/1Hv4zGdy3FZXpvtNJRoMVEzHXZWojxSzx?usp=drive_link"><img src="./Videos And Photoes/ak3.jpg" alt=""></a>
+            </div>
+            <div class="box">
+                <a href="https://drive.google.com/drive/folders/1m1ifxt-9Ieq-CUQd23PbtK2UQO58qyUV?usp=drive_link"><img src="./Videos And Photoes/ak4.jpg" alt=""></a>
+            </div>
+            <div class="box">
+                <a href="https://drive.google.com/drive/folders/1LB_s1r0Cy4rq1zYU46SyT_Zv36LuPgUa?usp=drive_link"><img src="./Videos And Photoes/ak5.jpg" alt=""></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
