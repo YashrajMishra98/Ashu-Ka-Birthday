@@ -93,16 +93,16 @@ video {
 }
 
 .ribbon::before {
-    width: 2vh;
-    height: 20vh;
+    width: 3vh;
+    height: 30vh;
     top: -7vh;
-    left: 9vh;
+    left: 13.5vh;
 }
 
 .ribbon::after {
-    width: 20vh;
-    height: 2vh;
-    top: 3vh;
+    width: 30vh;
+    height: 3vh;
+    top: 7.5vh;
 }
 
 .message {
