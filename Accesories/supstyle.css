@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-header {
+header{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -38,26 +38,25 @@ header {
     }
 }
 
-.container {
+.container{
     background-color: aqua;
     display: grid;
     grid-template-columns: auto auto;
-    height: auto;
+    height: 90vh;
     width: 100vw;
     text-align: center;
     justify-content: center;
-    padding: 1rem; /* Add padding for spacing */
 }
 
-.container div {
+.container div{
     background-color: rgb(124, 193, 228);
     border: 3px solid rgb(246, 34, 104);
     border-radius: 10px;
-    margin: 1vh;
+    margin: 3vh;
     padding: 1vh;
     color: white;
-    height: auto; /* Change height to auto for flexibility */
-    width: 100%; /* Use full width of grid cell */
+    height: 32vh;
+    width: 42vw;
     font-size: 20px;
 }
 
